@@ -45,13 +45,13 @@ namespace GenericsTestMaximum
                         MaxAmongThree maxAmongThree2 = new MaxAmongThree();
 
                         //Test case 1 : Max String in First position
-                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("aaa", "aa", "a"));
+                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("3", "2", "1"));
 
                         //Test case 2 : Max String in Second position
-                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("a", "aaa", "aa"));
+                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("1", "3", "2"));
 
                         //Test case 3 : Max String in Third position
-                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("a", "aa", "aaa"));
+                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("1", "2", "3"));
                         break;
                     default:
                         Console.WriteLine("Please choose correct option from the list");
