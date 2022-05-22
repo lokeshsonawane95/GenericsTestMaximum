@@ -10,6 +10,7 @@ namespace GenericsTestMaximum
             {
                 Console.WriteLine("\n1. Find maximum among three integers");
                 Console.WriteLine("2. Find maximum among three floats");
+                Console.WriteLine("3. Find maximum among three strings");
 
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice : ");
@@ -39,6 +40,18 @@ namespace GenericsTestMaximum
 
                         //Test case 3 : Max Number in Third position
                         Console.WriteLine("Maximum float number is : " + maxAmongThree1.MaxAmongThreeFloat(1.1f, 2.1f, 3.1f));
+                        break;
+                    case 3:
+                        MaxAmongThree maxAmongThree2 = new MaxAmongThree();
+
+                        //Test case 1 : Max String in First position
+                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("aaa", "aa", "a"));
+
+                        //Test case 2 : Max String in Second position
+                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("a", "aaa", "aa"));
+
+                        //Test case 3 : Max String in Third position
+                        Console.WriteLine("Maximum string is : " + maxAmongThree2.MaxAmongThreeString("a", "aa", "aaa"));
                         break;
                     default:
                         Console.WriteLine("Please choose correct option from the list");
