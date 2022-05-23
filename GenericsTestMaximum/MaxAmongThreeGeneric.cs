@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace GenericsTestMaximum
 {
-    internal class MaxAmongThreeGeneric/*<T> where T : IComparable*/
+    internal class MaxAmongThreeGeneric
     {
-        /*public T val1, val2, val3;
-
-        public MaxAmongThreeGeneric(T val1, T val2, T val3)
-        {
-            this.val1 = val1;
-            this.val2 = val2;
-            this.val3 = val3;
-        }*/
-
+        //Using generic method
+        //Implementing IComparable interface to use CompareTo method
         public T MaxAmongThree<T>(T val1, T val2, T val3) where T : IComparable
         {
             if (val1.CompareTo(val2) > 0 && val1.CompareTo(val3) > 0)
