@@ -34,5 +34,12 @@ namespace GenericsTestMaximum
             var maxValue = FindMax(this.values);
             return maxValue;
         }
+
+        //Generic method to print max value
+        public void PrintMax()
+        {
+            var maxValue = FindMax(this.values);
+            Console.WriteLine("Maximum value is : " + maxValue);
+        }
     }
 }
