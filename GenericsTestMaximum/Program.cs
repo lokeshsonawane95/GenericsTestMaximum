@@ -13,6 +13,7 @@ namespace GenericsTestMaximum
                 Console.WriteLine("3. Find maximum among three strings");
                 Console.WriteLine("4. Find maximum among int, float, string using generic method");
                 Console.WriteLine("5. Find max among three using generic class");
+                Console.WriteLine("6. Find max from more than three parameters using generic class");
 
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice : ");
@@ -85,6 +86,22 @@ namespace GenericsTestMaximum
                         //Test case for String
                         MaxAmongThreeGenericClass<string> maxString = new MaxAmongThreeGenericClass<string>("a", "aa", "aaa");
                         Console.WriteLine("Maximum string is : " + maxString.TestMaximum());
+                        break;
+                    case 6:
+                        //Test case for Integer
+                        int[] intArray = { 1, 2, 5, 3, 4 };
+                        MaxAmongMoreThanThree<int> moreThanThreeInt = new MaxAmongMoreThanThree<int>(intArray);
+                        Console.WriteLine("Maximum value is : " + moreThanThreeInt.FindMaxMethod());
+
+                        //Test case for Float
+                        float[] floatArray = { 1.1f, 2.2f, 5.5f, 3.3f, 4.4f };
+                        MaxAmongMoreThanThree<float> moreThanThreeFloat = new MaxAmongMoreThanThree<float>(floatArray);
+                        Console.WriteLine("Maximum value is : " + moreThanThreeFloat.FindMaxMethod());
+
+                        //Test case for String
+                        string[] stringArray = { "a", "aa", "aaaaa", "aaa", "aaaa" };
+                        MaxAmongMoreThanThree<string> moreThanThreeString = new MaxAmongMoreThanThree<string>(stringArray);
+                        Console.WriteLine("Maximum value is : " + moreThanThreeString.FindMaxMethod());
                         break;
                     default:
                         Console.WriteLine("Please choose correct option from the list");
